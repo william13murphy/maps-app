@@ -82,9 +82,6 @@ class App extends React.Component {
 
   render() {
     const position = [this.state.location.lat, this.state.location.lng];
-  };
-  render() {
-    const position = [this.state.lat, this.state.lng];
 
     return (
       <div className='App'>
@@ -137,14 +134,6 @@ class App extends React.Component {
             </Button>
           </Form>
         </Card>
-
-          <Marker position={position} icon={myIcon}>
-            <Popup>
-              A pretty CSS3 popup. <br /> Easily customizable.
-            </Popup>
-          </Marker>
-        </Map>
-
       </div>
     );
   }
